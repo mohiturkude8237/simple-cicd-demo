@@ -13,6 +13,7 @@ pipeline {
 
         stage('Update index.html') {
             steps {
+                    cp  /var/lib/jenkins/workspace/simple-ci-cd/index.html  /var/www/html/
                     echo 'index file updated.'
             }
         }

@@ -13,7 +13,7 @@ pipeline {
 
         stage('Update index.html') {
             steps {
-                    sh 'sudo cp index.html  /var/www/html/'
+                    sh 'cp index.html  /var/www/html/'
                     echo 'index file updated.'
             }
         }
